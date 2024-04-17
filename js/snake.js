@@ -246,9 +246,10 @@ class Keyboard1 extends Snake {
             touchstartY = e.touches[0].clientY;
         });
 
-        window.addEventListener('touchend', e => {
-            const touchendX = e.changedTouches[0].clientX;
-            const touchendY = e.changedTouches[0].clientY;
+        window.addEventListener('touchmove', e => {
+            e.preventDefault(); // Предотвращаем прокрутку страницы при свайпе
+            const touchendX = e.touches[0].clientX;
+            const touchendY = e.touches[0].clientY;
             const deltaX = touchendX - touchstartX;
             const deltaY = touchendY - touchstartY;
 
@@ -284,9 +285,10 @@ class Keyboard2 extends Snake {
             touchstartY = e.touches[0].clientY;
         });
 
-        window.addEventListener('touchend', e => {
-            const touchendX = e.changedTouches[0].clientX;
-            const touchendY = e.changedTouches[0].clientY;
+        window.addEventListener('touchmove', e => {
+            e.preventDefault(); // Предотвращаем прокрутку страницы при свайпе
+            const touchendX = e.touches[0].clientX;
+            const touchendY = e.touches[0].clientY;
             const deltaX = touchendX - touchstartX;
             const deltaY = touchendY - touchstartY;
 
@@ -322,9 +324,10 @@ class Keyboard3 extends Snake {
             touchstartY = e.touches[0].clientY;
         });
 
-        window.addEventListener('touchend', e => {
-            const touchendX = e.changedTouches[0].clientX;
-            const touchendY = e.changedTouches[0].clientY;
+        window.addEventListener('touchmove', e => {
+            e.preventDefault(); // Предотвращаем прокрутку страницы при свайпе
+            const touchendX = e.touches[0].clientX;
+            const touchendY = e.touches[0].clientY;
             const deltaX = touchendX - touchstartX;
             const deltaY = touchendY - touchstartY;
 
@@ -360,9 +363,10 @@ class Keyboard4 extends Snake {
             touchstartY = e.touches[0].clientY;
         });
 
-        window.addEventListener('touchend', e => {
-            const touchendX = e.changedTouches[0].clientX;
-            const touchendY = e.changedTouches[0].clientY;
+        window.addEventListener('touchmove', e => {
+            e.preventDefault(); // Предотвращаем прокрутку страницы при свайпе
+            const touchendX = e.touches[0].clientX;
+            const touchendY = e.touches[0].clientY;
             const deltaX = touchendX - touchstartX;
             const deltaY = touchendY - touchstartY;
 
