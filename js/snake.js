@@ -236,6 +236,31 @@ class Keyboard1 extends Snake {
             else if (e.key === 'ArrowLeft') this.turnLeft();
             else if (e.key === 'ArrowRight') this.turnRight();
         });
+        
+        // Добавляем обработчики сенсорного ввода для свайпов
+        let touchstartX;
+        let touchstartY;
+
+        window.addEventListener('touchstart', e => {
+            touchstartX = e.touches[0].clientX;
+            touchstartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener('touchend', e => {
+            const touchendX = e.changedTouches[0].clientX;
+            const touchendY = e.changedTouches[0].clientY;
+            const deltaX = touchendX - touchstartX;
+            const deltaY = touchendY - touchstartY;
+
+            // Определяем направление свайпа и вызываем соответствующую функцию поворота
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (deltaX > 0) this.turnRight(); // Свайп вправо
+                else this.turnLeft(); // Свайп влево
+            } else {
+                if (deltaY > 0) this.turnDown(); // Свайп вниз
+                else this.turnUp(); // Свайп вверх
+            }
+        });
     }
 }
 
@@ -248,6 +273,31 @@ class Keyboard2 extends Snake {
             else if (e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'ы') this.turnDown();
             else if (e.key.toLowerCase() === 'a' || e.key.toLowerCase() === 'ф') this.turnLeft();
             else if (e.key.toLowerCase() === 'd' || e.key.toLowerCase() === 'в') this.turnRight();
+        });
+        
+        // Добавляем обработчики сенсорного ввода для свайпов
+        let touchstartX;
+        let touchstartY;
+
+        window.addEventListener('touchstart', e => {
+            touchstartX = e.touches[0].clientX;
+            touchstartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener('touchend', e => {
+            const touchendX = e.changedTouches[0].clientX;
+            const touchendY = e.changedTouches[0].clientY;
+            const deltaX = touchendX - touchstartX;
+            const deltaY = touchendY - touchstartY;
+
+            // Определяем направление свайпа и вызываем соответствующую функцию поворота
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (deltaX > 0) this.turnRight(); // Свайп вправо
+                else this.turnLeft(); // Свайп влево
+            } else {
+                if (deltaY > 0) this.turnDown(); // Свайп вниз
+                else this.turnUp(); // Свайп вверх
+            }
         });
     }
 }
@@ -262,6 +312,31 @@ class Keyboard3 extends Snake {
             else if (e.key.toLowerCase() === 'j' || e.key.toLowerCase() === 'о') this.turnLeft();
             else if (e.key.toLowerCase() === 'l' || e.key.toLowerCase() === 'д') this.turnRight();
         });
+        
+        // Добавляем обработчики сенсорного ввода для свайпов
+        let touchstartX;
+        let touchstartY;
+
+        window.addEventListener('touchstart', e => {
+            touchstartX = e.touches[0].clientX;
+            touchstartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener('touchend', e => {
+            const touchendX = e.changedTouches[0].clientX;
+            const touchendY = e.changedTouches[0].clientY;
+            const deltaX = touchendX - touchstartX;
+            const deltaY = touchendY - touchstartY;
+
+            // Определяем направление свайпа и вызываем соответствующую функцию поворота
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (deltaX > 0) this.turnRight(); // Свайп вправо
+                else this.turnLeft(); // Свайп влево
+            } else {
+                if (deltaY > 0) this.turnDown(); // Свайп вниз
+                else this.turnUp(); // Свайп вверх
+            }
+        });
     }
 }
 
@@ -274,6 +349,31 @@ class Keyboard4 extends Snake {
             else if (e.key.toLowerCase() === '5') this.turnDown();
             else if (e.key.toLowerCase() === '4') this.turnLeft();
             else if (e.key.toLowerCase() === '6') this.turnRight();
+        });
+        
+        // Добавляем обработчики сенсорного ввода для свайпов
+        let touchstartX;
+        let touchstartY;
+
+        window.addEventListener('touchstart', e => {
+            touchstartX = e.touches[0].clientX;
+            touchstartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener('touchend', e => {
+            const touchendX = e.changedTouches[0].clientX;
+            const touchendY = e.changedTouches[0].clientY;
+            const deltaX = touchendX - touchstartX;
+            const deltaY = touchendY - touchstartY;
+
+            // Определяем направление свайпа и вызываем соответствующую функцию поворота
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                if (deltaX > 0) this.turnRight(); // Свайп вправо
+                else this.turnLeft(); // Свайп влево
+            } else {
+                if (deltaY > 0) this.turnDown(); // Свайп вниз
+                else this.turnUp(); // Свайп вверх
+            }
         });
     }
 }
