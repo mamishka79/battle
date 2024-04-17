@@ -6,7 +6,7 @@ class Game {
         this.ctx2 = context2;
         this.width;
         this.height;
-        this.cellSize = 30;
+        this.cellSize = 50;
         this.columns;
         this.rows;
         this.topMargin = 2;
